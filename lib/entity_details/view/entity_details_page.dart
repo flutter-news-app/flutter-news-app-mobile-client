@@ -108,6 +108,8 @@ class _EntityDetailsViewState extends State<EntityDetailsView> {
         name = l10n.entityDetailsSourceTitle;
       case ContentType.country:
         name = l10n.entityDetailsCountryTitle;
+      case ContentType.person:
+        name = l10n.entityDetailsPersonTitle;
       default:
         name = l10n.detailsPageTitle;
     }
@@ -178,6 +180,10 @@ class _EntityDetailsViewState extends State<EntityDetailsView> {
             final country = state.entity! as Country;
             appBarTitleText = country.name.getValue(context);
             appBarIconData = Icons.flag_outlined;
+          } else if (state.entity is Person) {
+            final person = state.entity! as Person;
+            appBarTitleText = person.name.getValue(context);
+            appBarIconData = Icons.person_outline;
           } else {
             appBarTitleText = l10n.detailsPageTitle;
           }
@@ -186,6 +192,7 @@ class _EntityDetailsViewState extends State<EntityDetailsView> {
             final Topic topic => topic.iconUrl,
             final Country country => country.flagUrl,
             final Source source => source.logoUrl,
+            final Person person => person.imageUrl,
             _ => null,
           };
 
@@ -290,6 +297,7 @@ class _EntityDetailsViewState extends State<EntityDetailsView> {
     final entityDescription = switch (state.entity) {
       final Topic topic => topic.description.getValue(context),
       final Source source => source.description.getValue(context),
+      final Person person => person.description.getValue(context),
       _ => '',
     };
 
@@ -445,6 +453,7 @@ class _EntityDetailsViewState extends State<EntityDetailsView> {
                   ContentType.topic => ContentAction.followTopic,
                   ContentType.source => ContentAction.followSource,
                   ContentType.country => ContentAction.followCountry,
+                  ContentType.person => ContentAction.followPerson,
                   _ => null,
                 };
 
