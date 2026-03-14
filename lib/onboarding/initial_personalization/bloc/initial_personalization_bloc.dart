@@ -30,6 +30,7 @@ class InitialPersonalizationBloc
     on<InitialPersonalizationItemsSelected<Topic>>(_onTopicsSelected);
     on<InitialPersonalizationItemsSelected<Source>>(_onSourcesSelected);
     on<InitialPersonalizationItemsSelected<Country>>(_onCountriesSelected);
+    on<InitialPersonalizationItemsSelected<Person>>(_onPersonsSelected);
     on<InitialPersonalizationCompleted>(_onCompleted);
     on<InitialPersonalizationSkipped>(_onSkipped);
 
@@ -96,6 +97,13 @@ class InitialPersonalizationBloc
     emit(state.copyWith(selectedCountries: event.items));
   }
 
+  void _onPersonsSelected(
+    InitialPersonalizationItemsSelected<Person> event,
+    Emitter<InitialPersonalizationState> emit,
+  ) {
+    emit(state.copyWith(selectedPersons: event.items));
+  }
+
   Future<void> _onCompleted(
     InitialPersonalizationCompleted event,
     Emitter<InitialPersonalizationState> emit,
@@ -114,6 +122,7 @@ class InitialPersonalizationBloc
             followedCountries: const [],
             followedSources: const [],
             followedTopics: const [],
+            followedPersons: const [],
             savedHeadlines: const [],
             savedHeadlineFilters: const [],
           );
@@ -122,6 +131,7 @@ class InitialPersonalizationBloc
         followedTopics: state.selectedTopics.toList(),
         followedSources: state.selectedSources.toList(),
         followedCountries: state.selectedCountries.toList(),
+        followedPersons: state.selectedPersons.toList(),
       );
 
       // If original preferences were null, we create; otherwise, we update.

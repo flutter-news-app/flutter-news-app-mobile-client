@@ -90,6 +90,25 @@ class _InitialPersonalizationView extends StatelessWidget {
     }
   }
 
+  Future<void> _selectPersons(BuildContext context) async {
+    final bloc = context.read<InitialPersonalizationBloc>();
+    final l10n = AppLocalizations.of(context);
+    final result = await Navigator.of(context).push<Set<Person>>(
+      MaterialPageRoute(
+        builder: (_) => MultiSelectSearchPage<Person>(
+          title: l10n.initialPersonalizationStepPersonsTitle,
+          repository: context.read<DataRepository<Person>>(),
+          initialSelectedItems: bloc.state.selectedPersons,
+          maxSelectionCount: bloc.state.maxSelectionsPerCategory,
+          itemBuilder: (person) => person.name.getValue(context),
+        ),
+      ),
+    );
+    if (result != null) {
+      bloc.add(InitialPersonalizationItemsSelected<Person>(items: result));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -171,6 +190,13 @@ class _InitialPersonalizationView extends StatelessWidget {
                                 selectedCount: state.selectedCountries.length,
                                 onTap: () => _selectCountries(context),
                               ),
+                            _StepCard(
+                              title:
+                                  l10n.initialPersonalizationStepPersonsTitle,
+                              selectedCount: state.selectedPersons.length,
+                              onTap: () => _selectPersons(context),
+                              icon: Icons.people_outline,
+                            ),
                           ],
                         ),
                       ),
@@ -202,11 +228,13 @@ class _StepCard extends StatelessWidget {
     required this.title,
     required this.selectedCount,
     required this.onTap,
+    this.icon = Icons.chevron_right,
   });
 
   final String title;
   final int selectedCount;
   final VoidCallback onTap;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -226,7 +254,7 @@ class _StepCard extends StatelessWidget {
                 ),
               ),
             const SizedBox(width: AppSpacing.sm),
-            const Icon(Icons.chevron_right),
+            Icon(icon),
           ],
         ),
         onTap: onTap,
