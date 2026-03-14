@@ -51,6 +51,7 @@ class AppInitializationPage extends StatelessWidget {
     required this.userRepository,
     required this.countriesRepository,
     required this.sourcesRepository,
+    required this.personsRepository,
     required this.remoteConfigRepository,
     required this.appSettingsRepository,
     required this.userContentPreferencesRepository,
@@ -80,6 +81,7 @@ class AppInitializationPage extends StatelessWidget {
   final DataRepository<Topic> topicsRepository;
   final DataRepository<Country> countriesRepository;
   final DataRepository<Source> sourcesRepository;
+  final DataRepository<Person> personsRepository;
   final DataRepository<User> userRepository;
   final DataRepository<RemoteConfig> remoteConfigRepository;
   final DataRepository<AppSettings> appSettingsRepository;
@@ -135,6 +137,7 @@ class AppInitializationPage extends StatelessWidget {
                     topicsRepository: topicsRepository,
                     userRepository: userRepository,
                     countriesRepository: countriesRepository,
+                    personsRepository: personsRepository,
                     sourcesRepository: sourcesRepository,
                     remoteConfigRepository: remoteConfigRepository,
                     appSettingsRepository: appSettingsRepository,
@@ -173,6 +176,7 @@ class AppInitializationPage extends StatelessWidget {
                     topicsRepository: topicsRepository,
                     userRepository: userRepository,
                     countriesRepository: countriesRepository,
+                    personsRepository: personsRepository,
                     sourcesRepository: sourcesRepository,
                     remoteConfigRepository: remoteConfigRepository,
                     appSettingsRepository: appSettingsRepository,
