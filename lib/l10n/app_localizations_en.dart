@@ -118,6 +118,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get followedContentSourcesTab => 'Sources';
 
   @override
+  String get followedContentCountriesTab => 'Countries';
+
+  @override
+  String get followedContentPersonsTab => 'Persons';
+
+  @override
   String get authenticationEmailSentSuccess =>
       'Check your email for the sign-in link.';
 
@@ -191,6 +197,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get headlinesFeedFilterEventCountryLabel => 'Countries';
 
   @override
+  String get headlinesFeedFilterPersonLabel => 'Persons';
+
+  @override
   String get headlinesFeedFilterSourceCountryLabel => 'Source Headquarter';
 
   @override
@@ -236,7 +245,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Create an account to save your settings, content preferences, and more across devices.';
 
   @override
-  String get authenticationSignInHeadline => 'Verity';
+  String get authenticationSignInHeadline => 'Veritai';
 
   @override
   String get authenticationSignInSubheadline =>
@@ -719,6 +728,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get addCountriesPageTitle => 'Add Countries to Follow';
 
   @override
+  String get addPersonsPageTitle => 'Follow Persons';
+
+  @override
   String followCountryTooltip(String countryName) {
     return 'Follow $countryName';
   }
@@ -816,6 +828,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get entityDetailsCountryTitle => 'Country';
 
   @override
+  String get entityDetailsPersonTitle => 'Person';
+
+  @override
   String get savedHeadlinesLoadingHeadline => 'Loading Saved Headlines...';
 
   @override
@@ -880,6 +895,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contentTypeCountry => 'Countries';
+
+  @override
+  String get contentTypePerson => 'Persons';
 
   @override
   String searchingFor(String contentType) {
@@ -1818,6 +1836,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get initialPersonalizationStepCountriesTitle => 'Select Countries';
+
+  @override
+  String get initialPersonalizationStepPersonsTitle => 'Select Persons';
 
   @override
   String initialPersonalizationTotalSelectionCountLabel(int count) {

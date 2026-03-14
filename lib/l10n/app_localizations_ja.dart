@@ -114,6 +114,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get followedContentSourcesTab => 'ソース';
 
   @override
+  String get followedContentCountriesTab => '国';
+
+  @override
+  String get followedContentPersonsTab => '人物';
+
+  @override
   String get authenticationEmailSentSuccess => 'サインインリンクをメールで送信しました。';
 
   @override
@@ -186,6 +192,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get headlinesFeedFilterEventCountryLabel => '国';
 
   @override
+  String get headlinesFeedFilterPersonLabel => '人物';
+
+  @override
   String get headlinesFeedFilterSourceCountryLabel => 'ソースの本拠地';
 
   @override
@@ -229,7 +238,7 @@ class AppLocalizationsJa extends AppLocalizations {
       'アカウントを作成して、設定やコンテンツの好みを保存しましょう。';
 
   @override
-  String get authenticationSignInHeadline => 'Verity';
+  String get authenticationSignInHeadline => 'Veritai';
 
   @override
   String get authenticationSignInSubheadline => '世界中の信頼できるソースからのニュース。';
@@ -688,6 +697,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get addCountriesPageTitle => 'フォローする国を追加';
 
   @override
+  String get addPersonsPageTitle => '人物をフォロー';
+
+  @override
   String followCountryTooltip(String countryName) {
     return '$countryNameをフォロー';
   }
@@ -779,6 +791,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get entityDetailsCountryTitle => '国';
 
   @override
+  String get entityDetailsPersonTitle => '人物';
+
+  @override
   String get savedHeadlinesLoadingHeadline => '保存した見出しを読み込み中...';
 
   @override
@@ -834,6 +849,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get contentTypeCountry => '国';
+
+  @override
+  String get contentTypePerson => '人物';
 
   @override
   String searchingFor(String contentType) {
@@ -1733,6 +1751,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get initialPersonalizationStepCountriesTitle => '国を選択';
+
+  @override
+  String get initialPersonalizationStepPersonsTitle => '人物を選択';
 
   @override
   String initialPersonalizationTotalSelectionCountLabel(int count) {

@@ -113,6 +113,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get followedContentSourcesTab => '来源';
 
   @override
+  String get followedContentCountriesTab => '国家';
+
+  @override
+  String get followedContentPersonsTab => '人物';
+
+  @override
   String get authenticationEmailSentSuccess => '请检查您的电子邮件以获取登录链接。';
 
   @override
@@ -185,6 +191,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get headlinesFeedFilterEventCountryLabel => '国家';
 
   @override
+  String get headlinesFeedFilterPersonLabel => '人物';
+
+  @override
   String get headlinesFeedFilterSourceCountryLabel => '总部所在地';
 
   @override
@@ -227,7 +236,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get authenticationLinkingSubheadline => '创建一个账户，以便在设备间保存您的设置、内容偏好等。';
 
   @override
-  String get authenticationSignInHeadline => 'Verity';
+  String get authenticationSignInHeadline => 'Veritai';
 
   @override
   String get authenticationSignInSubheadline => '来自全球可信来源的未经过滤的新闻。';
@@ -687,6 +696,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get addCountriesPageTitle => '添加要关注的国家';
 
   @override
+  String get addPersonsPageTitle => '关注人物';
+
+  @override
   String followCountryTooltip(String countryName) {
     return '关注 $countryName';
   }
@@ -778,6 +790,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get entityDetailsCountryTitle => '国家';
 
   @override
+  String get entityDetailsPersonTitle => '人物';
+
+  @override
   String get savedHeadlinesLoadingHeadline => '正在加载已保存的头条...';
 
   @override
@@ -833,6 +848,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get contentTypeCountry => '国家';
+
+  @override
+  String get contentTypePerson => '人物';
 
   @override
   String searchingFor(String contentType) {
@@ -1720,6 +1738,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get initialPersonalizationStepCountriesTitle => '选择国家';
+
+  @override
+  String get initialPersonalizationStepPersonsTitle => '选择人物';
 
   @override
   String initialPersonalizationTotalSelectionCountLabel(int count) {

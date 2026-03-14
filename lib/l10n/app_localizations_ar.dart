@@ -117,6 +117,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get followedContentSourcesTab => 'المصادر';
 
   @override
+  String get followedContentCountriesTab => 'الدول';
+
+  @override
+  String get followedContentPersonsTab => 'الأشخاص';
+
+  @override
   String get authenticationEmailSentSuccess =>
       'تحقق من بريدك الإلكتروني للحصول على رابط تسجيل الدخول.';
 
@@ -188,6 +194,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get headlinesFeedFilterEventCountryLabel => 'الدول';
+
+  @override
+  String get headlinesFeedFilterPersonLabel => 'الأشخاص';
 
   @override
   String get headlinesFeedFilterSourceCountryLabel => 'مقر المصدر';
@@ -718,6 +727,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get addCountriesPageTitle => 'إضافة دول للمتابعة';
 
   @override
+  String get addPersonsPageTitle => 'متابعة الأشخاص';
+
+  @override
   String followCountryTooltip(String countryName) {
     return 'متابعة $countryName';
   }
@@ -816,6 +828,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get entityDetailsCountryTitle => 'الدولة';
 
   @override
+  String get entityDetailsPersonTitle => 'شخص';
+
+  @override
   String get savedHeadlinesLoadingHeadline => 'جارٍ تحميل العناوين المحفوظة...';
 
   @override
@@ -877,6 +892,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get contentTypeCountry => 'الدول';
+
+  @override
+  String get contentTypePerson => 'الأشخاص';
 
   @override
   String searchingFor(String contentType) {
@@ -1818,6 +1836,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get initialPersonalizationStepCountriesTitle => 'اختر الدول';
+
+  @override
+  String get initialPersonalizationStepPersonsTitle => 'اختر الأشخاص';
 
   @override
   String initialPersonalizationTotalSelectionCountLabel(int count) {

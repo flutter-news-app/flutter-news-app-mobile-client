@@ -118,6 +118,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get followedContentSourcesTab => 'स्रोत';
 
   @override
+  String get followedContentCountriesTab => 'देश';
+
+  @override
+  String get followedContentPersonsTab => 'व्यक्ति';
+
+  @override
   String get authenticationEmailSentSuccess =>
       'साइन-इन लिंक के लिए अपना ईमेल देखें।';
 
@@ -191,6 +197,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get headlinesFeedFilterEventCountryLabel => 'देश';
+
+  @override
+  String get headlinesFeedFilterPersonLabel => 'व्यक्ति';
 
   @override
   String get headlinesFeedFilterSourceCountryLabel => 'स्रोत मुख्यालय';
@@ -723,6 +732,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get addCountriesPageTitle => 'फ़ॉलो करने के लिए देश जोड़ें';
 
   @override
+  String get addPersonsPageTitle => 'व्यक्तियों को फ़ॉलो करें';
+
+  @override
   String followCountryTooltip(String countryName) {
     return '$countryName को फ़ॉलो करें';
   }
@@ -820,6 +832,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get entityDetailsCountryTitle => 'देश';
 
   @override
+  String get entityDetailsPersonTitle => 'व्यक्ति';
+
+  @override
   String get savedHeadlinesLoadingHeadline =>
       'सहेजी गई हेडलाइंस लोड हो रही हैं...';
 
@@ -886,6 +901,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get contentTypeCountry => 'देश';
+
+  @override
+  String get contentTypePerson => 'व्यक्ति';
 
   @override
   String searchingFor(String contentType) {
@@ -1835,6 +1853,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get initialPersonalizationStepCountriesTitle => 'देश चुनें';
+
+  @override
+  String get initialPersonalizationStepPersonsTitle => 'व्यक्ति चुनें';
 
   @override
   String initialPersonalizationTotalSelectionCountLabel(int count) {

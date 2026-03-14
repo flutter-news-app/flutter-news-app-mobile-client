@@ -42,6 +42,14 @@
     "followedContentPageTitle": "Éléments suivis",
     "followedContentTopicsTab": "Sujets",
     "followedContentSourcesTab": "Sources",
+    "followedContentCountriesTab": "Pays",
+    "@followedContentCountriesTab": {
+        "description": "Label for the 'Countries' tab on the followed content page."
+    },
+    "followedContentPersonsTab": "Personnes",
+    "@followedContentPersonsTab": {
+        "description": "Label for the 'Persons' tab on the followed content page."
+    },
     "authenticationEmailSentSuccess": "Consultez vos e-mails pour le lien.",
     "authenticationPageTitle": "Connexion / Inscription",
     "authenticationEmailLabel": "E-mail",
@@ -66,6 +74,10 @@
     "headlinesFeedFilterSourceCNN": "CNN",
     "headlinesFeedFilterSourceReuters": "Reuters",
     "headlinesFeedFilterEventCountryLabel": "Pays",
+    "headlinesFeedFilterPersonLabel": "Personnes",
+    "@headlinesFeedFilterPersonLabel": {
+        "description": "Label for the person filter selection"
+    },
     "headlinesFeedFilterSourceCountryLabel": "Siège de la source",
     "headlinesFeedFilterCountryUS": "États-Unis",
     "headlinesFeedFilterCountryUK": "Royaume-Uni",
@@ -80,7 +92,7 @@
     "authenticationEmailSignInButton": "Continuer avec l'e-mail",
     "authenticationLinkingHeadline": "Synchronisez votre progression",
     "authenticationLinkingSubheadline": "Créez un compte pour sauvegarder vos paramètres et préférences.",
-    "authenticationSignInHeadline": "Verity",
+    "authenticationSignInHeadline": "Veritai",
     "authenticationSignInSubheadline": "Des nouvelles non filtrées de sources fiables.",
     "emailSignInPageTitle": "Se connecter par e-mail",
     "emailSignInExplanation": "Entrez votre e-mail. Nous vous enverrons un lien sécurisé.",
@@ -299,6 +311,10 @@
         }
     },
     "addCountriesPageTitle": "Ajouter des pays",
+    "addPersonsPageTitle": "Suivre des personnes",
+    "@addPersonsPageTitle": {
+        "description": "Title for the page where users can add persons to follow"
+    },
     "followCountryTooltip": "Suivre {countryName}",
     "@followCountryTooltip": {
         "placeholders": {
@@ -344,6 +360,10 @@
     "entityDetailsSourceTitle": "Source",
     "entityDetailsTopicTitle": "Sujet",
     "entityDetailsCountryTitle": "Pays",
+    "entityDetailsPersonTitle": "Personne",
+    "@entityDetailsPersonTitle": {
+        "description": "Title for person entity type"
+    },
     "savedHeadlinesLoadingHeadline": "Chargement des titres enregistrés...",
     "savedHeadlinesLoadingSubheadline": "Veuillez patienter...",
     "savedHeadlinesErrorHeadline": "Impossible de charger les titres enregistrés",
@@ -363,6 +383,10 @@
     "contentTypeTopic": "Sujets",
     "contentTypeSource": "Sources",
     "contentTypeCountry": "Pays",
+    "contentTypePerson": "Personnes",
+    "@contentTypePerson": {
+        "description": "Label for Person content type"
+    },
     "searchingFor": "Recherche de {contentType}...",
     "@searchingFor": {
         "placeholders": {
@@ -753,6 +777,10 @@
     "initialPersonalizationStepTopicsTitle": "Sujets",
     "initialPersonalizationStepSourcesTitle": "Sources",
     "initialPersonalizationStepCountriesTitle": "Pays",
+    "initialPersonalizationStepPersonsTitle": "Sélectionner des personnes",
+    "@initialPersonalizationStepPersonsTitle": {
+        "description": "Title for the person selection step in initial personalization."
+    },
     "initialPersonalizationTotalSelectionCountLabel": "{count} sélectionné(s)",
     "@initialPersonalizationTotalSelectionCountLabel": {
         "placeholders": {
