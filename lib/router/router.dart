@@ -423,6 +423,7 @@ GoRouter createRouter({
                       sourceRepository: context.read<DataRepository<Source>>(),
                       countryRepository: context
                           .read<DataRepository<Country>>(),
+                      personRepository: context.read<DataRepository<Person>>(),
                       appBloc: context.read<AppBloc>(),
                       adService: context.read<AdService>(),
                       inlineAdCacheService: context
@@ -531,12 +532,15 @@ GoRouter createRouter({
                                 .read<DataRepository<Source>>(),
                             countriesRepository: context
                                 .read<DataRepository<Country>>(),
+                            personsRepository: context
+                                .read<DataRepository<Person>>(),
                             appBloc: context.read<AppBloc>(),
                           )..add(
                             FilterDataLoaded(
                               initialSelectedTopics: initialFilter.topics,
                               initialSelectedSources: initialFilter.sources,
                               initialSelectedCountries: initialFilter.countries,
+                              initialSelectedPersons: initialFilter.persons,
                             ),
                           ),
                       child: HeadlinesFilterPage(

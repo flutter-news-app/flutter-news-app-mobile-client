@@ -52,6 +52,7 @@ class App extends StatelessWidget {
     required DataRepository<Topic> topicsRepository,
     required DataRepository<Country> countriesRepository,
     required DataRepository<Source> sourcesRepository,
+    required DataRepository<Person> personsRepository,
     required DataRepository<User> userRepository,
     required DataRepository<RemoteConfig> remoteConfigRepository,
     required DataRepository<AppSettings> appSettingsRepository,
@@ -81,6 +82,7 @@ class App extends StatelessWidget {
        _topicsRepository = topicsRepository,
        _countriesRepository = countriesRepository,
        _sourcesRepository = sourcesRepository,
+       _personsRepository = personsRepository,
        _userRepository = userRepository,
        _remoteConfigRepository = remoteConfigRepository,
        _appSettingsRepository = appSettingsRepository,
@@ -131,6 +133,7 @@ class App extends StatelessWidget {
   final DataRepository<Topic> _topicsRepository;
   final DataRepository<Country> _countriesRepository;
   final DataRepository<Source> _sourcesRepository;
+  final DataRepository<Person> _personsRepository;
   final DataRepository<User> _userRepository;
   final DataRepository<RemoteConfig> _remoteConfigRepository;
   final DataRepository<AppSettings> _appSettingsRepository;
@@ -167,6 +170,7 @@ class App extends StatelessWidget {
         RepositoryProvider.value(value: _topicsRepository),
         RepositoryProvider.value(value: _countriesRepository),
         RepositoryProvider.value(value: _sourcesRepository),
+        RepositoryProvider.value(value: _personsRepository),
         RepositoryProvider.value(value: _adService),
         RepositoryProvider.value(value: _feedDecoratorService),
         RepositoryProvider.value(value: _userRepository),
