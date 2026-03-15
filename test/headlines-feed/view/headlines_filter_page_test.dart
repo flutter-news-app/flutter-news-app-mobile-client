@@ -53,6 +53,7 @@ void main() {
       topics: [],
       sources: [],
       countries: [],
+      persons: [],
     );
     late HeadlinesFeedBloc headlinesFeedBloc;
     late MockContentLimitationService contentLimitationService;
