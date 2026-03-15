@@ -190,12 +190,12 @@ class _InitialPersonalizationView extends StatelessWidget {
                                 selectedCount: state.selectedCountries.length,
                                 onTap: () => _selectCountries(context),
                               ),
+                              // TODO(fulleni): Add remote config persons selection
                             _StepCard(
                               title:
                                   l10n.initialPersonalizationStepPersonsTitle,
                               selectedCount: state.selectedPersons.length,
                               onTap: () => _selectPersons(context),
-                              icon: Icons.people_outline,
                             ),
                           ],
                         ),
